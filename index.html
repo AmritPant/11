@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{NAME}} Website</title>
+    <style>
+      :root {
+        --primary-color: #3366cc;
+        --secondary-color: #cccccc;
+        --text-color: #333333;
+        --footer-color: #999999;
+        --social-media-color: #ffffff;
+      }
+      body {
+        background-color: var(--secondary-color);
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: var(--primary-color);
+        color: var(--social-media-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        color: var(--social-media-color);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 750px) {
+        h1 {
+          font-size: 18px;
+        }
+
+        nav ul li a {
+          font-size: 14px;
+        }
+
+        nav {
+          padding: 5px;
+        }
+        header {
+          flex-direction: column;
+          padding: 10px;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        nav ul li a {
+          font-size: 12px;
+        }
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: var(--social-media-color);
+        font-size: 20px;
+      }
+      nav a:hover {
+        color: var(--text-color);
+      }
+      footer {
+        background-color: var(--footer-color);
+        color: var(--social-media-color);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+      footer p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+      }
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .social-media i {
+        font-size: 30px;
+        margin: 0 10px;
+        color: var(--social-media-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>{{NAME}}</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Soial links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      style="
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 20px;
+      "
+    >
+      <h1
+        style="
+          color: #3366cc;
+          font-size: 32px;
+          font-weight: bold;
+          text-align: center;
+        "
+      >
+        Introduction to Web Development
+      </h1>
+      <p style="color: #333333">
+        Web development is the process of creating websites and web applications
+        that can be accessed through the internet. It involves a combination of
+        various technologies such as HTML, CSS, JavaScript, and others, which
+        are used to create the user interface and functionality of a website.
+      </p>
+      <p style="color: #333333">
+        HTML (Hypertext Markup Language) is the standard markup language used to
+        create the structure and content of a web page. It provides a way to
+        define the different parts of a webpage such as headings, paragraphs,
+        images, links, and more.
+      </p>
+      <p style="color: #333333">
+        CSS (Cascading Style Sheets) is used to add style and layout to a
+        webpage. It provides a way to customize the colors, fonts, and other
+        visual elements of a webpage.
+      </p>
+      <p style="color: #333333">
+        JavaScript is used to add interactivity and dynamic functionality to a
+        webpage. It enables developers to create interactive forms, animations,
+        and other effects that enhance the user experience of a website.
+      </p>
+      <p style="color: #333333">
+        Other technologies used in web development include server-side scripting
+        languages such as PHP, Python, and Ruby, as well as databases such as
+        MySQL and PostgreSQL, which are used to store and manage data on the
+        server side.
+      </p>
+      <p style="color: #333333">
+        Web development is a complex and constantly evolving field, and it
+        requires a combination of technical skills, creativity, and
+        problem-solving abilities. With the growing demand for web developers,
+        it is a great time to learn web development and start building your own
+        websites and applications.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 {{NAME}}. All rights reserved.</p>
+      <div class="social-media">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+  </body>
+</html>
